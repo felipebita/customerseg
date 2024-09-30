@@ -2,6 +2,7 @@
 
 Can you segment customers based on their ordering behavior, such as frequency, time of day, or days since prior order, to better understand their preferences and propose ways to optimize marketing strategies?
 
+[Orders Data](https://drive.google.com/file/d/1crDRZkG_Pj9EgXcxo9y97vHLVqfuZvPA/view?usp=sharing)
 ## Solution
 
 **Summary:** 
