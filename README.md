@@ -3,6 +3,8 @@
 Can you segment customers based on their ordering behavior, such as frequency, time of day, or days since prior order, to better understand their preferences and propose ways to optimize marketing strategies?
 
 [Orders Data](https://drive.google.com/file/d/1crDRZkG_Pj9EgXcxo9y97vHLVqfuZvPA/view?usp=sharing)
+
+[Notebook](https://github.com/felipebita/customerseg/blob/main/Customer_Segmentation.ipynb)
 ## Solution
 
 **Summary:** 
@@ -32,7 +34,9 @@ For visualizing the clusters within the data, I employed a **3D PCA** scatterplo
 **Customer segments:**
 
 Here is described the characteristics of each cluster found in the K-means clustering.
- 
+
+![image](https://github.com/user-attachments/assets/18b8143a-f742-4f00-a4d0-f9b1d28d2f1f)
+
 Cluster 0:
 
 - *Frequency:* Very high frequency, indicating frequent ordering behavior.
