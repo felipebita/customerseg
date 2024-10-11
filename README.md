@@ -1,15 +1,18 @@
 # Customer Segmentation 
 
-Can you segment customers based on their ordering behavior, such as frequency, time of day, or days since prior order, to better understand their preferences and propose ways to optimize marketing strategies?
-
 [Orders Data](https://drive.google.com/file/d/1crDRZkG_Pj9EgXcxo9y97vHLVqfuZvPA/view?usp=sharing)
 
 [Notebook](https://github.com/felipebita/customerseg/blob/main/Customer_Segmentation.ipynb)
+
+**Objective:**
+
+Segment customers based on their ordering behavior—frequency, time of day, or days since prior order—to better understand their preferences and optimize marketing strategies.
+
 ## Solution
 
 **Summary:** 
 
-To address this question, I employed an **RFM (Recency, Frequency, Monetary Value)** strategy combined with **K-means clustering** for client segmentation. Since Monetary Value data was not available, I used the mean number of products per order (*mean_products*) as a proxy for value. Additionally, I included two more features: whether the client typically orders before or after midday (*b_a_12*) and whether they usually place orders earlier or later in the week (*e_l_week*). The most intesting number of cluster was 5 and it enabled tailored marketing strategies.
+To address this task, I employed an **RFM (Recency, Frequency, Monetary Value)** strategy combined with **K-means clustering** for client segmentation. Since Monetary Value data was not available, I used the mean number of products per order (*mean_products*) as a proxy for value. Additionally, I included two more features: whether the client typically orders before or after midday (*b_a_12*) and whether they usually place orders earlier or later in the week (*e_l_week*). The most intesting number of cluster was 5 and it enabled tailored marketing strategies.
 
 **Data Processing:** 
 
