@@ -1,4 +1,4 @@
-# Customer Segmentation: 
+# Customer Segmentation 
 
 Can you segment customers based on their ordering behavior, such as frequency, time of day, or days since prior order, to better understand their preferences and propose ways to optimize marketing strategies?
 
