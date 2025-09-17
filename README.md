@@ -40,84 +40,84 @@ Here is described the characteristics of each cluster found in the K-means clust
 
 ![image](https://github.com/user-attachments/assets/0f2f2953-a02e-4104-adff-1fe4f1e79b1e)
 
-Cluster 0:
+Cluster 0: Recent, Infrequent Shoppers
+- *Frequency:* Low, suggesting these customers do not purchase often.
+- *Recency:* Very high, indicating they have made a purchase very recently.
+- *Mean Products:* Slightly high, meaning they tend to buy a decent number of items when they do order.
+- *Mean Interval:* High, confirming they take a long time between orders.
+- *b_a_12:* High, showing a strong preference for ordering after midday.
+- *e_l_week:* Low, indicating they tend to order earlier in the week.
+- *Summary:* This group consists of recent but infrequent customers. They purchase a relatively large number of products per order but have long gaps between their purchases. They are most active after midday and during the early part of the week. They could be new customers or existing ones who only shop for specific occasions.
 
-- *Frequency:* Very high frequency, indicating frequent ordering behavior.
-- *Recency:* High, meaning these customers have ordered recently.
-- *Mean Products:* High, indicating they purchase a larger number of products per order.
-- *Mean Interval*: Short intervals between orders.
-- *b_a_12:* Positive value suggests these customers are more likely to order after midday.
-- *e_l_week:* Slightly positive, indicating a tendency to order later in the week.
-- *Summary:* High-engagement customers who frequently order a large number of products, mostly after midday and towards the end of the week.
+Cluster 1: At-Risk Morning Shoppers
+- *Frequency:* Below average, indicating they are not frequent shoppers.
+- *Recency:* Low, meaning it's been a while since their last purchase.
+- *Mean Products:* Below average, suggesting smaller basket sizes.
+- *Mean Interval:* Below average, which might indicate they used to purchase in bursts but have since stopped.
+- *b_a_12:* Very low, showing a strong preference for ordering before midday.
+- *e_l_week:* Low, indicating a preference for ordering early in the week.
+- *Summary:* This is a group of lapsing or at-risk customers who are likely to churn. They haven't shopped in a while, and when they did, their orders were infrequent and small. Their defining characteristic is a strong preference for shopping in the morning and early in the week. A re-engagement campaign would be suitable for them.
 
-Cluster 1:
+Cluster 2: Loyal Regulars (Potentially Lapsing)
+- *Frequency:* Very high, by far the most frequent shoppers in the dataset.
+- *Recency:* Low, indicating it has been some time since their last purchase.
+- *Mean Products:* Slightly above average, suggesting healthy order sizes.
+- *Mean Interval:* Very low, confirming they make purchases very close together.
+- *b_a_12:* Neutral, with no strong preference for ordering before or after midday.
+- *e_l_week:* Neutral, with no strong preference for the day of the week.
+- *Summary:* This is your core group of loyal and highly engaged customers. They shop far more often than anyone else. However, their low recency is a red flag, suggesting that these normally active customers may be at risk of lapsing. They are prime candidates for a loyalty program or a "we miss you" campaign to bring them back.
 
-- *Frequency:* Low frequency, meaning these customers order less often.
-- *Recency:* Very low, indicating they haven't ordered recently.
-- *Mean Products:* Very low, meaning they purchase fewer products per order.
-- *Mean Interval:* Long intervals between orders.
-- *b_a_12:* Negative value suggests these customers tend to order before midday.
-- *e_l_week:* Tends towards earlier in the week.
-- *Summary:* Low-engagement customers who infrequently order a small number of products, primarily before midday and early in the week.
-  
-Cluster 2:
+Cluster 3: New & Cautious Shoppers
+- *Frequency:* Below average, indicating infrequent purchasing behavior.
+- *Recency:* Very high, tied for the most recent shoppers.
+- *Mean Products:* Very low, indicating they buy very few items per order.
+- *Mean Interval:* Very high, showing the longest time between purchases.
+- *b_a_12:* Below average, suggesting a slight preference for ordering before midday.
+- *e_l_week:* High, indicating a tendency to order later in the week.
+- *Summary:* This group likely represents new customers making small, trial purchases. They are very recent but have bought very little. Their high interval between orders confirms their infrequent nature. The goal with this segment is to nurture them and encourage a second, larger purchase, perhaps with a targeted follow-up offer.
 
-- *Frequency:* Moderate frequency, with customers ordering at a balanced rate.
-- *Recency:* Moderate, indicating recent but not very recent orders.
-- *Mean Products:* Low, with fewer products per order.
-- *Mean Interval:* Balanced interval between orders.
-- *b_a_12:* Tends to order after midday.
-- *e_l_week:* Balanced across the week.
-- *Summary:* Moderate customers with balanced ordering patterns, favoring the afternoon with no strong preference for early or late week.
-  
-Cluster 3:
+Cluster 4: Lapsing Afternoon Shoppers
+- *Frequency:* Low, indicating they are infrequent buyers.
+- *Recency:* Low, meaning it has been a while since they last shopped.
+- *Mean Products:* Average, suggesting typical order sizes.
+- *Mean Interval:* Below average, showing relatively short gaps between their past purchases.
+- *b_a_12:* Very high, indicating a very strong preference for shopping after midday.
+- *e_l_week:* Slightly high, suggesting a tendency to order later in the week.
+- *Summary:* This group is similar to Cluster 1 but with a key difference in their shopping time. They are infrequent, lapsing customers with a very distinct habit of ordering in the afternoon and toward the end of the week. A targeted re-engagement campaign sent in the afternoon might be effective at winning them back.
 
-- *Frequency:* Low frequency, ordering less often.
-- *Recency:* Moderate, with somewhat recent orders.
-- *Mean Products:* Very high, purchasing a large number of products per order.
-- *Mean Interval:* Longer intervals between orders.
-- *b_a_12:* Tends to order after midday.
-- *e_l_week:* Later in the week.
-- *Summary:* Low frequency, high-value customers who order fewer times but purchase many products, usually after midday and late in the week.
-  
-Cluster 4:
+**Marketing Strategies for Customer Segments**
 
-- *Frequency:* Moderate frequency.
-- *Recency:* Moderate, indicating recent orders.
-- *Mean Products:* Balanced product count per order.
-- *Mean Interval:* Short intervals between orders.
-- *b_a_12:* Balanced but slightly more after midday.
-- *e_l_week:* Balanced across the week.
-- *Summary:* Moderately engaged customers with a balanced approach to ordering, slightly favoring afternoons but evenly distributed across the week.
+Cluster 0: Recent, Infrequent Shoppers:
+*This group consists of recent customers who buy a good number of items but have long gaps between purchases. They are most active after midday and early in the week.*
 
-**Marketing Strategies:**
+- *Post-Purchase Nurturing:* Implement an automated email series after their first purchase. The first email should confirm the order, the second could offer tips on using the products, and a third could suggest complementary items to encourage a second purchase sooner.
+- *Incentivize the Next Purchase:* A week or two after their order, send a time-sensitive offer (e.g., "15% off your next order, valid for 14 days") specifically designed to shorten their long purchasing interval.
+- *Time-Targeted Communication:* Schedule promotional emails and app notifications to be sent on Monday and Tuesday afternoons to align with their established shopping habits.
 
-Here are marketing strategies suitable for each customer segment identified in the dataset.
+Cluster 1: At-Risk Morning Shoppers:
+*These are lapsing customers who made small, infrequent orders. Their defining trait is a strong preference for shopping in the morning and early in the week.*
 
-Cluster 0: **High-engagement customers who frequently order a large number of products, mostly after midday and towards the end of the week.**
+- *Win-Back Campaigns:* Launch a "We Miss You!" campaign with a compelling, high-value offer (e.g., a steep discount or a free product with their next purchase) to grab their attention.
+- *Precision Timing:* Send all re-engagement communications during their preferred window: morning hours (e.g., 9-11 AM) on Monday or Tuesday.
+- *Feedback Collection:* Send a survey asking for feedback on their experience, with a small incentive for completion. This can provide valuable insights into why they stopped purchasing and make them feel heard.
 
-- *Loyalty Programs:* Implement a rewards program offering points for every purchase or product bought, with exclusive benefits for frequent buyers; Offer tiered rewards where more frequent or higher-value customers receive greater benefits.
-- *Time-Sensitive Promotions:* Send targeted promotions in the afternoon, especially on Thursdays and Fridays, to align with their ordering patterns. Introduce flash sales or limited-time offers to encourage additional purchases before the weekend.
+Cluster 2: Loyal Regulars (Potentially Lapsing):
+*This is your most valuable group of highly frequent shoppers. However, their low recency is a major concern, indicating they are at high risk of churning.*
 
-Cluster 1: **Low-engagement customers who infrequently order a small number of products, primarily before midday and early in the week.**
+- *VIP Treatment & Exclusivity:* Acknowledge their loyalty with exclusive perks. Grant them early access to new product launches or sales events. Send them a personalized "VIP Thank You" offer that is more generous than standard promotions.
+- *Proactive Re-engagement:* Don't wait. Send a personalized email or notification that says, "We've noticed you haven't been around lately. Here's a special something to welcome you back."
+- *Highlight Loyalty Benefits:* Remind them of their accumulated loyalty points or the benefits of their tier in your rewards program to encourage them to return and use their status.
 
-- *Re-engagement Campaigns:* Send personalized campaigns reminding them of products they’ve previously purchased and highlighting new arrivals. Offer a special discount or incentive for their next purchase to encourage them to order again.
-- *Morning and Early Week Deals:* Since they prefer to order before midday and early in the week, target them with morning promotions or "Monday Motivation" deals to kickstart their buying week.
+Cluster 3: New & Cautious Shoppers:
+*This group likely represents new customers who made a single, small "trial" purchase. They are recent but have the longest interval between potential purchases and buy few items.*
 
-Cluster 2: **Moderate customers with balanced ordering patterns, favoring the afternoon with no strong preference for early or late week.**
+- *Build Trust & Confidence:* Send content that reinforces their purchase decision. This could include customer testimonials, 5-star reviews, or blog posts showcasing the benefits of the product they bought.
+-*Encourage a Second Purchase:* After they've had time to experience their first product, offer a special discount on a related category or a "starter kit" bundle to encourage a larger, more confident second order.
+- *Brand Introduction:* Add them to a "Welcome" email flow that introduces the brand's story, values, and what makes your products unique to build a connection beyond just one transaction.
 
-- *Midday Offers:* Offer promotions that go live in the afternoon to capture their attention during their preferred ordering time. Create "Lunch Break Specials" that they can take advantage of while on break.
-- *Balanced Promotions:* Rotate between early and late week promotions to cater to their balanced ordering pattern, ensuring they receive offers at times they are likely to order.
+Cluster 4: Lapsing Afternoon Shoppers:
+*This is another group of at-risk customers who are lapsing. Their key characteristic is a very strong preference for shopping in the afternoon and towards the end of the week.*
 
-Cluster 3: **Low frequency, high-value customers who order fewer times but purchase many products, usually after midday and late in the week.**
-
-- Bulk Purchase Incentives: Offer discounts or promotions for bulk purchases, such as "Buy More, Save More" deals or free shipping for large orders. Create subscription-based services for frequently bought items, offering convenience and discounts for regular large purchases.
-- Reminder and Replenishment Programs: Send reminders when it’s time to reorder based on their average interval between purchases.
-- Exclusive Deals for High-Value Orders: Offer exclusive discounts or perks for customers who spend above a certain threshold, such as a complimentary product or VIP customer service.
-- Evening and Late Week Promotions: Launch promotions that go live in the evening and are valid through the weekend to align with their shopping habits. Encourage them to complete their week with a special offer available late in the week.
-
-Cluster 4: **Moderately engaged customers with a balanced approach to ordering, slightly favoring afternoons but evenly distributed across the week.**
-
-- Consistency and Variety: Maintain consistent communication with these customers, offering a mix of product recommendations and new product introductions. Introduce variety in your promotions, alternating between percentage discounts, bundle offers, or free shipping to keep them interested.
-- Loyalty Building: Encourage loyalty by rewarding them for consistent purchasing behavior, even if it’s moderate. Offer a rewards program that accumulates points for every purchase. Provide tiered rewards, allowing them to unlock greater benefits with continued engagement.
-- Balanced Timing Offers: Since their ordering patterns are spread throughout the week, ensure promotions and communications are timed evenly, so they always have an offer that aligns with their schedule.
+- *Afternoon Flash Sales:* Create limited-time flash sales that run exclusively in the afternoons on Thursdays and Fridays. Promote these heavily to this specific segment to create urgency and align perfectly with their habits.
+- *Personalized Reminders:* Use their browsing history or past purchases to send targeted "Still thinking about it?" or "Back in stock!" notifications during their preferred afternoon shopping window.
+- *Weekend-Focused Promotions:* Frame offers around the upcoming weekend (e.g., "Get ready for the weekend! Enjoy 20% off."). Send these communications on Thursday or Friday afternoon to capture their attention when they are most likely to be active.
