@@ -38,7 +38,7 @@ For visualizing the clusters within the data, I employed a **3D PCA** scatterplo
 
 Here is described the characteristics of each cluster found in the K-means clustering.
 
-![image](https://github.com/user-attachments/assets/18b8143a-f742-4f00-a4d0-f9b1d28d2f1f)
+![image](https://github.com/user-attachments/assets/0f2f2953-a02e-4104-adff-1fe4f1e79b1e)
 
 Cluster 0:
 
